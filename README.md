@@ -1,6 +1,6 @@
-# ✏️ 24-25 App Assignment 05 :   Profile and Goal Management App 만들기 
+# ✏️ 24-25 App Assignment 05
 
-### 🙋🏻‍♀️ Profile and Goal Management App
+### 🙋🏻‍♀️ Profile and Goal Management App 만들기 
 #### 🗣️ 과제  설명 
   지난 차시에 만들었던 MyProfile에 `SQflite`를 이용하여, 목표를 추가하고 삭제하는 기능을  만들어봅니다. **Goal을 추가하고 삭제하는 기능은 필수로 구현**해야하며, Validation과 목표를 수정하는 기능은 선택 사항입니다. 아래 예시 참고하며, 수행하시면 됩니다. 
 
