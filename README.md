@@ -1,4 +1,4 @@
-# ✏️ 24-25 App Assignment 05
+# ✏️ 24-25 App Assignment 06
 
 ### 🙋🏻‍♀️ Profile and Goal Management App 만들기 
 #### 🗣️ 과제  설명 
