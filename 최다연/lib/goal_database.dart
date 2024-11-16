@@ -50,6 +50,11 @@ class GoalDatabase {
     return await db.delete('goals', where: 'id = ?', whereArgs: [id]);
   }
 
+  Future<int> editGoal(int id, Goal goal) async {
+    final db = await instance.database;
+    return await db.update('goals', goal.toMap(), where: 'id = ?', whereArgs: [id]);
+  }
+
   Future close() async{
     final db = await instance.database;
     db.close();
