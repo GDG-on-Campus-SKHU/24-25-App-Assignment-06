@@ -108,8 +108,8 @@ class _GoalAppState extends State<GoalApp> {
     );
   }
 
-  static const TextStyle style15 = TextStyle(fontSize: 18.0, color: Colors.grey);
-  static const TextStyle style20 = TextStyle(fontSize: 25, fontWeight: FontWeight.bold);
+  static const TextStyle style18 = TextStyle(fontSize: 18.0, color: Colors.grey);
+  static const TextStyle style25 = TextStyle(fontSize: 25.0, fontWeight: FontWeight.bold);
 
   Widget _myGoals() {
     return SizedBox(
@@ -154,6 +154,7 @@ class _GoalAppState extends State<GoalApp> {
             IconButton(
               onPressed: _addGoal,
               icon: const Icon(Icons.add),
+              color: Colors.white,
             ),
           ],
         ),
@@ -164,27 +165,29 @@ class _GoalAppState extends State<GoalApp> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 5),
-                Container(
-                  width: 150,
-                  height: 150,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(100),
-                    image: const DecorationImage(
-                      image: AssetImage("assets/images/miu.jpeg"),
-                      fit: BoxFit.fill,
+                Center(
+                  child: Container(
+                    width: 150,
+                    height: 150,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(100),
+                      image: const DecorationImage(
+                        image: AssetImage("assets/images/miu.jpeg"),
+                        fit: BoxFit.fill,
+                      ),
                     ),
                   ),
                 ),
                 const SizedBox(height: 15),
                 const Divider(color: Colors.grey, thickness: 2),
                 const SizedBox(height: 15),
-                const Text('name', style: style15),
-                const Text('Choi DaYeon', style: style20),
+                const Text('name', style: style18),
+                const Text('Choi DaYeon', style: style25),
                 const SizedBox(height: 15),
-                const Text('Github ID', style: style15),
-                const Text('@choi-day', style: style20),
+                const Text('Github ID', style: style18),
+                const Text('@choi-day', style: style25),
                 const SizedBox(height: 15),
-                const Text('Introduce Me,,,', style: style20),
+                const Text('Introduce Me,,,', style: style25),
                 SizedBox(
                   height: 80,
                   child: ListView(
@@ -201,7 +204,7 @@ class _GoalAppState extends State<GoalApp> {
                   ),
                 ),
                 const SizedBox(height: 25),
-                const Text('2025 Goals', style: style20),
+                const Text('2025 Goals', style: style25),
                 _myGoals(),
               ],
             ),
