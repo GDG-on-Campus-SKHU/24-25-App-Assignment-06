@@ -44,7 +44,7 @@ class GoalDatabase {
     final result = await db.query('goals');
     return result.map((json) => Goal.fromMap(json)).toList();
   }
-
+  
   Future<int> deleteGoal(int id) async{
     final db = await instance.database;
     return await db.delete('goals', where: 'id = ?', whereArgs: [id]);

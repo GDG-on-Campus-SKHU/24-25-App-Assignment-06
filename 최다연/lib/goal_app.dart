@@ -39,6 +39,7 @@ class _GoalAppState extends State<GoalApp> {
             onChanged: (value) {
               title = value;
             },
+            decoration: const InputDecoration(hintText: "목표 제목"),
             validator: (value) {
               if (value == null || value.isEmpty) {
                 return '목표를 입력하세요';
@@ -83,9 +84,10 @@ class _GoalAppState extends State<GoalApp> {
             onChanged: (value) {
               title = value;
             },
+            decoration: const InputDecoration(hintText: "목표 제목"),
             validator: (value) {
               if (value == null || value.isEmpty) {
-                return '목표를 입력하세요';
+                return '목표 제목';
               }
               return null;
             },
